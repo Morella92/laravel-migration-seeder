@@ -16,7 +16,7 @@ class TrainsController extends Controller
     {
         $trains = Train::upcoming()->get();
 
-        $data = ['trains' => $upcomingTrains]; 
+        $data = ['trains' => $trains]; 
         return view('home', $data);
     }
 
